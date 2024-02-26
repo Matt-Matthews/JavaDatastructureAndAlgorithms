@@ -3,15 +3,19 @@ package datastructure;
 public class App {
 
     public static void main(String[] args) {
-        LinkedList linkedList = new LinkedList(4);
-        linkedList.append(3);
-        linkedList.append(5);
-        linkedList.append(9);
-        linkedList.insert(2, 0);
+        DoubleLinkedList linkedList = new DoubleLinkedList(1);
 
-        linkedList.reverse();
+        linkedList.append(2);
 
+        linkedList.prepend(3);
         linkedList.printList();
-        System.out.println();
+        System.out.println("##################");
+        // linkedList.removeFirst();
+        // linkedList.printList();
+        System.out.println(linkedList.get(2).value);
+        System.out.println("##################");
+        linkedList.insert(2, 9);
+        linkedList.remove(1);
+        linkedList.printList();
     }
 }

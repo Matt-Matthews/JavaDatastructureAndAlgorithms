@@ -3,19 +3,13 @@ package datastructure;
 public class App {
 
     public static void main(String[] args) {
-        DoubleLinkedList linkedList = new DoubleLinkedList(1);
+        BinarySearchTree tree = new BinarySearchTree(40);
 
-        linkedList.append(2);
+        tree.insert(20);
+        tree.insert(55);
+        tree.insert(30);
+        tree.insert(10);
 
-        linkedList.prepend(3);
-        linkedList.printList();
-        System.out.println("##################");
-        // linkedList.removeFirst();
-        // linkedList.printList();
-        System.out.println(linkedList.get(2).value);
-        System.out.println("##################");
-        linkedList.insert(2, 9);
-        linkedList.remove(1);
-        linkedList.printList();
+        System.out.println("contains: " + tree.contains(0));
     }
 }

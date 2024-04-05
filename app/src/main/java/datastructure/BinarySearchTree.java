@@ -64,4 +64,16 @@ public class BinarySearchTree {
         return false;
     }
 
+    private void inOrderSort(Node currentNode) {
+        if (currentNode != null) {
+            inOrderSort(currentNode.left);
+            System.out.println(currentNode.value);
+            inOrderSort(currentNode.right);
+        }
+    }
+
+    public void inOrderTraversal() {
+        inOrderSort(root);
+    }
+
 }

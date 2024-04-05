@@ -11,5 +11,7 @@ public class App {
         tree.insert(10);
 
         System.out.println("contains: " + tree.contains(0));
+
+        tree.inOrderTraversal();
     }
 }
